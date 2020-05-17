@@ -1,0 +1,6 @@
+{
+    "python.pythonPath": "/Users/vladislavbushmakin/opt/miniconda3/envs/opencv-env/bin/python",
+    "python.linting.pylintEnabled": false,
+    "python.linting.banditEnabled": true,
+    "python.linting.enabled": true
+}
