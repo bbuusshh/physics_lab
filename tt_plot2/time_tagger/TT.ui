@@ -780,7 +780,7 @@
      <enum>Qt::Horizontal</enum>
     </property>
    </widget>
-   <widget class="QCheckBox" name="checkBox_2">
+   <widget class="QCheckBox" name="checkBox_gated">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -799,7 +799,7 @@
      <string>Gate</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_countrate_2">
+   <widget class="QLabel" name="label_countrate_gated">
     <property name="geometry">
      <rect>
       <x>10</x>
