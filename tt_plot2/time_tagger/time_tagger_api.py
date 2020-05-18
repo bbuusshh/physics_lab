@@ -2,6 +2,7 @@ import numpy as np
 import TimeTagger as tt
 from TimeTagger import createTimeTagger, Dump, Correlation, Histogram, Counter, TimeTagStream, TimeTagStreamBuffer, GatedChannel, DelayedChannel, Combiner
 import yaml
+import sys
 
 class TT:
     def __init__(self, parameters, runTest=False):
@@ -22,8 +23,6 @@ class TT:
         for idx, delay_t in enumerate(self.delayTimes):
                 if delay_t != 0:
                     self.tagger.setInputDelay(delay=delay_t, channel = idx+1)
-
-        self.dataCount = []
 
         self.hist_1 = Histogram(self.tagger, 
                                 self.currentChan1[0], 

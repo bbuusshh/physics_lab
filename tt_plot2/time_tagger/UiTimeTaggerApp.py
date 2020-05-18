@@ -24,7 +24,7 @@ class Ui_MainWindow(object):
         self.tabWidget_up.setFont(font)
         self.tabWidget_up.setStyleSheet("")
         self.tabWidget_up.setObjectName("tabWidget_up")
-        self.tab_histo1 = MPL_WIDGET()
+        self.tab_histo1 = QtWidgets.QWidget()
         self.tab_histo1.setObjectName("tab_histo1")
         self.widget_histo2_2 = MPL_WIDGET(self.tab_histo1)
         self.widget_histo2_2.setGeometry(QtCore.QRect(0, 0, 721, 301))
