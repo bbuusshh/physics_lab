@@ -45,7 +45,7 @@
      <attribute name="title">
       <string>Histo</string>
      </attribute>
-     <widget class="MPL_WIDGET" name="widget_histo1" native="true">
+     <widget class="MPL_WIDGET" name="widget_histo2_2" native="true">
       <property name="geometry">
        <rect>
         <x>0</x>
