@@ -35,7 +35,7 @@
     <property name="currentIndex">
      <number>0</number>
     </property>
-    <widget class="PlotWidget" name="tab_histo1">
+    <widget class="MPL_WIDGET" name="tab_histo1">
      <property name="whatsThis">
       <string>histo_1</string>
      </property>
@@ -45,7 +45,7 @@
      <attribute name="title">
       <string>Histo</string>
      </attribute>
-     <widget class="PlotWidget" name="widget_histo1" native="true">
+     <widget class="MPL_WIDGET" name="widget_histo1" native="true">
       <property name="geometry">
        <rect>
         <x>0</x>
@@ -60,7 +60,7 @@
      <attribute name="title">
       <string>g2</string>
      </attribute>
-     <widget class="PlotWidget" name="widget_correlation" native="true">
+     <widget class="MPL_WIDGET" name="widget_correlation" native="true">
       <property name="geometry">
        <rect>
         <x>0</x>
@@ -75,7 +75,7 @@
      <attribute name="title">
       <string>Freeze</string>
      </attribute>
-     <widget class="PlotWidget" name="widget_freeze" native="true">
+     <widget class="MPL_WIDGET" name="widget_freeze" native="true">
       <property name="geometry">
        <rect>
         <x>0</x>
@@ -109,7 +109,7 @@
      <attribute name="title">
       <string>Histo</string>
      </attribute>
-     <widget class="PlotWidget" name="widget_histo2" native="true">
+     <widget class="MPL_WIDGET" name="widget_histo2" native="true">
       <property name="geometry">
        <rect>
         <x>0</x>
@@ -124,7 +124,7 @@
      <attribute name="title">
       <string>Count</string>
      </attribute>
-     <widget class="PlotWidget" name="widget_countrate" native="true">
+     <widget class="MPL_WIDGET" name="widget_countrate" native="true">
       <property name="geometry">
        <rect>
         <x>0</x>
@@ -139,7 +139,7 @@
      <attribute name="title">
       <string>Gate</string>
      </attribute>
-     <widget class="PlotWidget" name="widget_gate" native="true">
+     <widget class="MPL_WIDGET" name="widget_gate" native="true">
       <property name="geometry">
        <rect>
         <x>0</x>
@@ -846,9 +846,9 @@
  </widget>
  <customwidgets>
   <customwidget>
-   <class>PlotWidget</class>
+   <class>MPL_WIDGET</class>
    <extends>QWidget</extends>
-   <header location="global">mypqtgrph</header>
+   <header location="global">mplwidget</header>
    <container>1</container>
   </customwidget>
  </customwidgets>
