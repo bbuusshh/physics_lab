@@ -40,7 +40,7 @@ class MainApp(QMainWindow , Ui_MainWindow):
         mpl.ax.set_xticklabels(linspace(0, t_max, 5), color="r" )
         mpl.ax.set_yticks(linspace(0, len(mpl.y_), 5));
         mpl.ax.set_yticklabels(linspace(0, max(mpl.y_), 5), color="r" )
-        mpl.draw()        
+        mpl.draw()
 
         mpl.timer= mpl.new_timer(mpl.interval, [(mpl.update_canvas, (), {})])
         mpl.timer.start()
