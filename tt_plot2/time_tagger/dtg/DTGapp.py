@@ -16,7 +16,7 @@ class MainApp(QMainWindow , Ui_MainWindow):
         QMainWindow.__init__(self)
         # It is imperative to call self.setupUi (self) for the interface to initialize.
         self.setupUi(self) # This is defined in design.py file automatically
-        self.dtg = dtg_api.DTG(dtg_adress='TCPI .. :::', channels=[1,2,3,4])
+        self.dtg = dtg_api.DTG(dtg_adress='TCPIP0::129.69.46.221::inst0::INSTR', channel=['A', 1])
         self.checkBox_run.clicked.connect(self.on_checkBox_run)
         self.comboBox_load.currentIndexChanged.connect(self.on_comboBox_load)
         self.channel = ['A', 1]

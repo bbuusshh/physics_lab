@@ -1,3 +1,24 @@
+import os
+from os.path import join, getsize, isfile
+import sys
+import time
+import io
+import yaml
+
+import numpy as np
+import pandas as pd
+from scipy import signal
+from matplotlib import cm
+from matplotlib import pyplot as plt
+
+import pyqtgraph as pg
+import pyqtgraph.exporters
+from PyQt5.QtCore import QTimer, QThread, QObject, pyqtSignal, pyqtSlot, QRunnable, QThreadPool
+from PyQt5.QtWidgets import QApplication, QMainWindow,  QInputDialog, QLineEdit
+
+from UiTimeTaggerApp import Ui_MainWindow
+
+
 from PyQt5.QtWidgets import QApplication , QMainWindow, QFileDialog
 from PyQt5 import QtGui
 from PyQt5.QtCore import pyqtSlot
@@ -24,26 +45,7 @@ class MainApp(QMainWindow , Ui_MainWindow):
         self.histo1()
 
     def histo1(self):
-        mpl=self.widget_histo1.canvas
-        mpl.ax.clear()
-
-        t_max = self.tt.binWidth1 * self.tt.numBins1 / 1000 # ns
-        t_range = np.lispace(0, t_max, self.tt.numBins1)
-
-        mpl.y_ = self.tt.hist_1.getData()/(self.tt.binWidth1/1000)
-        mpl.new_y_data = lambda x: self.tt.hist_1.getData()/(self.tt.binWidth1/1000)
-
-        mpl.ax_plot = mpl.ax.plot(t_range, mpl.y_)
-        mpl.ax.set_xlabel(u"$time, ns$",fontsize=12, fontweight="bold" )
-        mpl.ax.set_ylabel(u"$countrate, kcps$",fontsize=12, fontweight="bold" )
-        mpl.ax.set_xticks(linspace(0, self.numBins1, 5));
-        mpl.ax.set_xticklabels(linspace(0, t_max, 5), color="r" )
-        mpl.ax.set_yticks(linspace(0, len(mpl.y_), 5));
-        mpl.ax.set_yticklabels(linspace(0, max(mpl.y_), 5), color="r" )
-        mpl.draw()
-
-        mpl.timer= mpl.new_timer(mpl.interval, [(mpl.update_canvas, (), {})])
-        mpl.timer.start()
+        print("Hey there")
 
 if __name__ == "__main__":
     import sys
