@@ -1,0 +1,7 @@
+name: tt_plot
+dependencies:
+  - python=3.7   # or 2.7
+  - numpy
+  - pandas
+  - pyqtgraph
+  - scipy
